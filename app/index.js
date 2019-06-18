@@ -1,4 +1,4 @@
 import 'styles/style.scss' 
-import 'font-awesome-webpack'
+// import 'font-awesome-webpack'
 
 

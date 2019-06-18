@@ -1,27 +1,31 @@
-@import url(https://fonts.googleapis.com/css?family=Vollkorn)
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,600&display=swap')
 $space: 20px
 $primary-color: #01cbbf
 $grey: #555555
 $border: 1px solid #aaaaaa
 $color-border: 1px solid $primary-color
-$primary-font: 'Miso'
+$primary-font: 'Roboto Condensed'
 .resume
     color: #333333
     width: 730px
     margin: 0 auto
     font-family: $primary-font
     font-size: 1em
+    font-weight: 300
 
     h1, h2, h3
         font-family: $primary-font
+        font-weight: 400
+    strong
+        font-weight: 400
 
-    ul 
+    ul
         padding-left: 0px
         list-style-type: none
-        li 
+        li
             margin-bottom: $space/3
 
-    hr 
+    hr
         border: none
         border-bottom: $border
         border-bottom-color: $primary-color
@@ -32,11 +36,11 @@ $primary-font: 'Miso'
         &:visited
             color: $primary-color
 
-    hr 
+    hr
         margin: $space 0px
 
     header
-        width: 100% 
+        width: 100%
         display: flex
         align-items: center
         margin-top: $space
@@ -47,13 +51,13 @@ $primary-font: 'Miso'
         .title
             margin-left: $space*0.75
 
-        ul.contact 
+        ul.contact
             display: inline-block
             margin: 0px
             padding: 0px
             flex: 1
             text-align: right
-            li 
+            li
                 display: inline-block
                 padding-right: $space/2
                 margin-bottom: 0px
@@ -64,36 +68,36 @@ $primary-font: 'Miso'
 
     .content
         display: flex
-        aside 
+        aside
             width: 180px
             margin-left: $space*1.5
         > div
             flex: 1
 
         section
-            h3 
+            h3
                 display: inline-block
                 margin: 0px
-                + span 
+                + span
                     margin-left: 0px
-                    font-weight: bold
+                    font-weight: 400
                     color: $grey
-            .item 
+            .item
                 margin-bottom: $space
                 ul
                     line-height: 1.2em
                     margin-top: $space/2
                 &:last-child
                     margin-bottom: 0px
-                    ul 
+                    ul
                         margin-bottom: 0px
-            .dates 
+            .dates
                 float: right
                 font-style: italic
                 color: $grey
-            .link 
+            .link
                 // float: right
-                font-size: 0.9em 
+                font-size: 0.9em
                 margin-left: $space/4
             .technologies
                 color: $grey
@@ -102,13 +106,13 @@ $primary-font: 'Miso'
 *
   -webkit-print-color-adjust: exact !important
 
-@media print 
-    body 
+@media print
+    body
         color: red
     a
         color: $primary-color !important
         text-decoration: none !important
         &:visited
             color: $primary-color !important
-    header 
+    header
         margin-top: 0px !important

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server --inline --content-base public/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -22,5 +23,9 @@
     "style-loader": "^0.12.4",
     "url-loader": "^0.5.6",
     "webpack": "^1.12.2"
+  },
+  "dependencies": {
+    "font-awesome-webpack": "^0.0.5-beta.2",
+    "node-sass": "^4.12.0"
   }
 }
