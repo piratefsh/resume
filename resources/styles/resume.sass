@@ -10,8 +10,11 @@ $primary-font: 'Roboto Condensed'
     width: 730px
     margin: 0 auto
     font-family: $primary-font
-    font-size: 1em
-    font-weight: 300
+    font-size: 14px
+
+    ul
+        font-weight: 300
+        line-height: 1.3em
 
     h1, h2, h3
         font-family: $primary-font
@@ -20,8 +23,8 @@ $primary-font: 'Roboto Condensed'
         font-weight: 400
 
     ul
-        padding-left: 0px
-        list-style-type: none
+        padding-left: $space
+        // list-style-type: none
         li
             margin-bottom: $space/3
 
@@ -85,7 +88,6 @@ $primary-font: 'Roboto Condensed'
             .item
                 margin-bottom: $space
                 ul
-                    line-height: 1.2em
                     margin-top: $space/2
                 &:last-child
                     margin-bottom: 0px
@@ -93,8 +95,9 @@ $primary-font: 'Roboto Condensed'
                         margin-bottom: 0px
             .dates
                 float: right
-                font-style: italic
+                // font-style: italic
                 color: $grey
+                font-weight: lighter
             .link
                 // float: right
                 font-size: 0.9em
